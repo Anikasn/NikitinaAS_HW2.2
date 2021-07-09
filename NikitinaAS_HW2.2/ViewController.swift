@@ -21,40 +21,51 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        colorMix(redSlider: redSlider.value,
+                 greenSlider: greenSlider.value,
+                 blueSlider: blueSlider.value)
     }
     
     override func viewWillLayoutSubviews() {
         colorResultView.layer.cornerRadius = colorResultView.frame.height / 8
     }
     
-    @IBAction func redSliderAction() {
-        redValueLabel.text = String(Int(redSlider.value))
-        
+    private func colorMix(redSlider: Float,
+                          greenSlider: Float,
+                          blueSlider: Float) {
         colorResultView.backgroundColor = UIColor(
-            red: CGFloat(redSlider.value / 255.0),
-            green: CGFloat(greenSlider.value / 255.0),
-            blue: CGFloat(blueSlider.value / 255.0),
+            red: CGFloat(redSlider / 255),
+            green: CGFloat(greenSlider / 255),
+            blue: CGFloat(blueSlider / 255),
             alpha: 1.0)
+    }
+    
+    @IBAction func redSliderAction() {
+        redValueLabel.text = String(format: "%.0f",
+                                    redSlider.value)
+        
+        colorMix(redSlider: redSlider.value,
+                 greenSlider: greenSlider.value,
+                 blueSlider: blueSlider.value)
     }
     
     @IBAction func greenSliderAction() {
-        greenValueLabel.text = String(Int(greenSlider.value))
+        greenValueLabel.text = String(format: "%.0f",
+                                      greenSlider.value)
         
-        colorResultView.backgroundColor = UIColor(
-            red: CGFloat(redSlider.value / 255.0),
-            green: CGFloat(greenSlider.value / 255.0),
-            blue: CGFloat(blueSlider.value / 255.0),
-            alpha: 1.0)
+        colorMix(redSlider: redSlider.value,
+                 greenSlider: greenSlider.value,
+                 blueSlider: blueSlider.value)
     }
     
     @IBAction func blueSiderAction() {
-        blueValueLabel.text = String(Int(blueSlider.value))
+        blueValueLabel.text = String(format: "%.0f",
+                                     blueSlider.value)
         
-        colorResultView.backgroundColor = UIColor(
-            red: CGFloat(redSlider.value / 255.0),
-            green: CGFloat(greenSlider.value / 255.0),
-            blue: CGFloat(blueSlider.value / 255.0),
-            alpha: 1.0)
+        colorMix(redSlider: redSlider.value,
+                 greenSlider: greenSlider.value,
+                 blueSlider: blueSlider.value)
     }
     
 }
