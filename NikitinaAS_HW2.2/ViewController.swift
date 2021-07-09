@@ -15,16 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenValueLabel: UILabel!
     @IBOutlet weak var blueValueLabel: UILabel!
     
-    
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     override func viewWillLayoutSubviews() {
@@ -33,15 +29,32 @@ class ViewController: UIViewController {
     
     @IBAction func redSliderAction() {
         redValueLabel.text = String(Int(redSlider.value))
+        
+        colorResultView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value / 255.0),
+            green: CGFloat(greenSlider.value / 255.0),
+            blue: CGFloat(blueSlider.value / 255.0),
+            alpha: 1.0)
     }
     
     @IBAction func greenSliderAction() {
         greenValueLabel.text = String(Int(greenSlider.value))
+        
+        colorResultView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value / 255.0),
+            green: CGFloat(greenSlider.value / 255.0),
+            blue: CGFloat(blueSlider.value / 255.0),
+            alpha: 1.0)
     }
     
     @IBAction func blueSiderAction() {
         blueValueLabel.text = String(Int(blueSlider.value))
+        
+        colorResultView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value / 255.0),
+            green: CGFloat(greenSlider.value / 255.0),
+            blue: CGFloat(blueSlider.value / 255.0),
+            alpha: 1.0)
     }
     
 }
-

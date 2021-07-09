@@ -17,46 +17,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cF2-kZ-8pX">
-                                <rect key="frame" x="16" y="59" width="358" height="358"/>
+                                <rect key="frame" x="-13" y="103" width="358" height="202"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="cF2-kZ-8pX" secondAttribute="height" multiplier="1:1" id="hXK-IF-ooQ"/>
+                                    <constraint firstAttribute="width" secondItem="cF2-kZ-8pX" secondAttribute="height" multiplier="16:9" id="hXK-IF-ooQ"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="LED-U0-QdY">
-                                <rect key="frame" x="16" y="452" width="22" height="29"/>
+                                <rect key="frame" x="16" y="295.33333333333331" width="22" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yT9-b9-oEc">
-                                <rect key="frame" x="46" y="452" width="55" height="29"/>
+                                <rect key="frame" x="46" y="295.33333333333331" width="55" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="jZl-UB-Dfp">
-                                <rect key="frame" x="125" y="451" width="251" height="32"/>
+                                <rect key="frame" x="125" y="294.33333333333331" width="251" height="32"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <color key="thumbTintColor" systemColor="systemRedColor"/>
                                 <connections>
-                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="P41-or-xo8"/>
+                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="9wL-w8-UyP"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="R5t-2a-0Ff">
-                                <rect key="frame" x="16" y="511.66666666666669" width="25" height="29.333333333333314"/>
+                                <rect key="frame" x="16" y="355.33333333333331" width="25" height="29.333333333333314"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="3Zh-vX-4A7">
-                                <rect key="frame" x="46" y="511.66666666666669" width="55" height="29.333333333333314"/>
+                                <rect key="frame" x="46" y="355.33333333333331" width="55" height="29.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="7FX-Dm-CEk">
-                                <rect key="frame" x="125" y="511.33333333333331" width="251" height="31.333333333333314"/>
+                                <rect key="frame" x="125" y="354.66666666666669" width="251" height="31.333333333333314"/>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <color key="thumbTintColor" systemColor="systemGreenColor"/>
                                 <connections>
@@ -64,19 +64,19 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="el5-mF-7mA">
-                                <rect key="frame" x="16" y="573" width="22" height="31.333333333333371"/>
+                                <rect key="frame" x="16" y="416.66666666666669" width="22" height="31.333333333333314"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="23" placeholderIntrinsicHeight="31.333333333333371" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="lg1-X6-cRG">
-                                <rect key="frame" x="46" y="573" width="55" height="31.333333333333371"/>
+                                <rect key="frame" x="46" y="416.66666666666669" width="55" height="31.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="cZk-Ul-hLI">
-                                <rect key="frame" x="125" y="573.66666666666663" width="251" height="31.333333333333371"/>
+                                <rect key="frame" x="125" y="417.33333333333331" width="251" height="31"/>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <color key="thumbTintColor" systemColor="systemBlueColor"/>
                                 <connections>
